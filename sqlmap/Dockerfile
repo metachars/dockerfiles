@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && apt-get install -y \
 git python-mysqldb --no-install-recommends
 
-RUN git clone https://github.com/sqlmapproject/sqlmap.git \
+RUN git clone https://github.com/sqlmapproject/sqlmap.git
 
 WORKDIR /sqlmap
 VOLUME /data
